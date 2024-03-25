@@ -1,0 +1,76 @@
+:root {
+    --dark-purple: #231123;
+    --murrey: #82204A;
+    --dark-cyan: #558C8C;
+    --flax: #E8DB7D;
+    --alice-blue: #EFF7FF;
+}
+
+@font-face {
+    font-family: 'Lemon Milk';
+    src: url('./LEMONMILK-Medium.otf') format("opentype");
+    font-style: normal;
+  }
+
+body {
+    background-color: var(--alice-blue);
+    margin: 0;
+    font-family: 'Lemon Milk';
+    text-align: center;
+}
+
+nav {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-items: center;
+    background-color: var(--dark-purple);
+    height: 8vh;
+}
+
+nav button {
+    width: 100px;
+    background-color: inherit;
+    border: none;
+    color: var(--alice-blue);
+    font-weight: 600;
+    font-size: 24px;
+
+}
+
+.home img {
+    width: 150px;
+}
+
+.description {
+    white-space: pre-wrap;
+    text-align: center;
+}
+
+.home ul {
+    list-style: none;
+    text-align: center;
+    padding: 0;
+}
+
+.title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.location {
+    text-align: center;
+}
+
+
+.main-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.locations-container {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
